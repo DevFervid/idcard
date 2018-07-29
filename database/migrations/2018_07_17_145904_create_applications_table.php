@@ -18,13 +18,13 @@ class CreateApplicationsTable extends Migration
             $table->integer('user_id')->unsigned();
             $table->string('middle_name');
             $table->string('lname');
-            $table->string('dob');
+            $table->date('dob');
             $table->string('gender');
             $table->string('fathers_name');
             $table->string('mothers_name');
             $table->string('marital');
             $table->string('husband_name');
-            $table->string('husband_idno');
+            $table->integer('husband_idno');
             $table->string('tribe');
             $table->string('clan');
             $table->string('district');

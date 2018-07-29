@@ -7,7 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 class Application extends Model
 {
     protected $fillable = [
-    	'user_id',
     	'middle_name',
     	'last_name',
     	'dob',
@@ -28,4 +27,10 @@ class Application extends Model
     	'filename',
 
     ];
+
+    public function users(){
+
+        return $this->belongsTo('App\User');
+
+    }
 }

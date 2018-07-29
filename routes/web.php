@@ -11,7 +11,11 @@
 |
 */
 
-
+Route::get('dashboard', 'DashboardController@dashboard')->name('dashboard');
+Route::get('dashboard/applicants', 'DashboardController@applicants')->name('applicants');
+Route::get('dashboard/new', 'DashboardController@new')->name('new');
+Route::get('dashboard/replace', 'DashboardController@replace')->name('replace');
+Route::get('dashboard/particulars', 'DashboardController@particulars')->name('particulars');
 
 Auth::routes();
 
@@ -27,4 +31,8 @@ Route::get('/replace', 'idcardController@replace')->name('replace');
 Route::get('/particulars', 'idcardController@particulars')->name('particulars');
 
 Route::resource('applications', 'ApplicationsController');
+Route::resource('applicants', 'ApplicantsController');
 
+Route::get('admin', 'AdminController@dashboard')->name('admin');
+Route::get('admin/applicants', 'AdminController@applicants')->name('applicants');
+Route::get('admin/reports', 'AdminController@reports')->name('reports');
