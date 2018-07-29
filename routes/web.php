@@ -23,6 +23,8 @@ Route::get('/changepartireq', 'idcardController@changepartireq')->name('changepa
 Route::get('/newidreq', 'idcardController@newidreq')->name('newidreq');
 Route::get('/replaceidreq', 'idcardController@replaceidreq')->name('replaceidreq');
 Route::get('/services', 'idcardController@services')->name('services');
+Route::get('/replace', 'idcardController@replace')->name('replace');
+Route::get('/particulars', 'idcardController@particulars')->name('particulars');
 
 Route::resource('applications', 'ApplicationsController');
 

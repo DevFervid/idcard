@@ -4,7 +4,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header bg-default text-center">Application for Identity Card</div>
+                <div class="card-header bg-default text-center">Application for Change of Particulars in ID/Card</div>
 
                 <div class="card-body">
                     @if (session('status'))
@@ -12,6 +12,13 @@
                             {{ session('status') }}
                         </div>
                     @endif
+
+                    <div class="input-group mb-3">
+                          <input type="text" class="form-control" placeholder="Enter your ID Number" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                          <div class="input-group-append">
+                            <button class="btn btn-outline-primary" type="button">Confirm Identity</button>
+                          </div>
+                        </div><br><br>
                     
                     <form action="{{url('applications')}}" method="POST" enctype="multipart/form-data">
                         @csrf
@@ -36,22 +43,7 @@
                             <input type="text" class="form-control" name="dob" placeholder="">
                          </div>  
                          <br>
-                        <select class="custom-select">
-                          <option selected>Select Gender</option>
-                          <option value="1">Male</option>
-                          <option value="2">Female</option>
-                        </select>
-                        <br><br>
-                         <div class="row">
-                            <div class="col">
-                             <label>Father's Name</label>
-                             <input type="text" class="form-control" name="fathers_name" placeholder="">
-                            </div>
-                            <div class="col">
-                             <label>Mother's Name</label>
-                             <input type="text" class="form-control" name="mothers_name" placeholder="">
-                            </div>
-                        </div><br>
+                        
                         <select class="custom-select">
                           <option selected>Select Marital Status</option>
                           <option value="1">Single</option>
@@ -71,17 +63,6 @@
                             </div>
                         </div><br>
                         <div class="row">
-                            <div class="col">
-                             <label>Tribe</label>
-                               <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                                <option selected>Choose...</option>
-                                <option value="1">Kamba</option>
-                                <option value="2">Kikuyu</option>
-                                <option value="3">Luo</option>
-                                <option value="4">Luhya</option>
-                                <option value="5">Kalenjin</option>
-                              </select>
-                         </div>
                             <div class="col">
                              <label>Clan</label>
                              <input type="text" class="form-control" name="clan" placeholder="">
@@ -166,7 +147,23 @@
                          <div class="form-group">
                             <label for="formGroupExampleInput">Occupation</label>
                             <input type="text" class="form-control" name="Occupation" placeholder="">
+                         </div>
+
+                            <div class="form-group">
+                             <div class="row">
+                            <div class="col">
+                             <label>Reason for Change</label>
+                               <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                <option selected>Choose...</option>
+                                <option value="1">Upon Marriage</option>
+                                <option value="2">Change of Location</option>
+                                <option value="3">Additional Name</option>
+                                
+                              </select>
+                         </div>
                          </div> <br> 
+
+
                         <div class="custom-file">
                           <input type="file" class="custom-file-input" name="filename">
                           <label class="custom-file-label" for="customFile">Upload supporting documents</label>

@@ -37,6 +37,14 @@ class idcardController extends Controller
     {
         return view('services');
     }
+    public function replace()
+    {
+        return view('replace');
+    }
+     public function particulars()
+    {
+        return view('particulars');
+    }
 
     /**
      * Show the form for creating a new resource.
