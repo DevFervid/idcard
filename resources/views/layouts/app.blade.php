@@ -10,15 +10,19 @@
 
     <title>NATIONAL-ID-APPLICATION</title>
 
-    <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
-
     <!-- Fonts -->
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet" type="text/css">
-
+    <script src="https://cdn.jsdelivr.net/npm/gijgo@1.9.6/js/gijgo.min.js" type="text/javascript"></script>
+    <link href="https://cdn.jsdelivr.net/npm/gijgo@1.9.6/css/gijgo.min.css" rel="stylesheet" type="text/css" />
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/date.css') }}" rel="stylesheet">
+
+    <!-- Scripts -->
+    <script src="{{ asset('js/app.js') }}" defer></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="{{ asset('js/date.js') }}" defer></script>
 </head>
 <body>
     <div id="app">
@@ -75,5 +79,12 @@
             @yield('content')
         </main>
     </div>
+
+    <script type="text/javascript">  
+        $('#datepicker').datepicker({ 
+            autoclose: true,   
+            format: 'dd-mm-yyyy'  
+         });  
+    </script>
 </body>
 </html>

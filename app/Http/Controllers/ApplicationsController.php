@@ -1,30 +1,25 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Application;
 use Illuminate\Http\Request;
 
 class ApplicationsController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-        /**
-     * Create a new controller instance.
-     *
-     * @return void
-     */
     public function __construct()
     {
         $this->middleware('auth');
     }
 
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+
     public function index()
     {
-        $applications=\App\Application::all();
-        return view('applications.index',compact('applications'));
+        return view('applications.index')->with('applications', Application::all());
     }
 
     /**
@@ -34,7 +29,7 @@ class ApplicationsController extends Controller
      */
     public function create()
     {
-        return view('home');
+        return view('applications.create');
     }
 
     /**
@@ -45,13 +40,34 @@ class ApplicationsController extends Controller
      */
     public function store(Request $request)
     {
+        $this->validate($request, [
+            'middle_name' => 'required',
+            'lname' => 'required',
+            'dob' => 'required',
+            'gender' => 'required',
+            'fathers_name' => 'required',
+            'mothers_name' => 'required',
+            'marital' => 'required',
+            'tribe' => 'required',
+            'clan' => 'required',
+            'district' => 'required',
+            'division' => 'required',
+            'constituency' => 'required',
+            'location' => 'required',
+            'sub_location' => 'required',
+            'home_address' => 'required',
+            'occupation' => 'required'
+        ]);
+
         if($request->hasfile('filename'))
          {
             $file = $request->file('filename');
             $name=time().$file->getClientOriginalName();
             $file->move(public_path().'/images/', $name);
          }
+
         $applications= new \App\Application;
+
         $applications->middle_name=$request->get('middle_name');
         $applications->lname=$request->get('lname');
         $applications->dob=$request->get('dob');
@@ -71,7 +87,10 @@ class ApplicationsController extends Controller
         $applications->village=$request->get('village');
         $applications->home_address=$request->get('home_address');
         $applications->occupation=$request->get('occupation');
+        $applications->filename=$request->get('filename');
         $applications->save();
+
+        return redirect('applications')->with('success', 'Application done Successfully');
     }
 
     /**
