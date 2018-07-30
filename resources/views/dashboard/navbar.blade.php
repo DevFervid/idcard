@@ -60,6 +60,9 @@
                             <a href="{{ url('dashboard/replace') }}"><i class="fa fa-edit fa-fw"></i> Replace</a>
                         </li>
                         <li>
+                            <a href="{{ url('dashboard/reports') }}"><i class="fa fa-edit fa-fw"></i> Reports</a>
+                        </li>
+                        <li>
                             <a href="{{ url('dashboard/particulars') }}"><i class="fa fa-edit fa-fw"></i>Edit Particulars</a>
                         </li>
                     </ul>
