@@ -18,6 +18,7 @@ class CreateApplicantsTable extends Migration
             $table->string('fname');
             $table->string('mname');
             $table->string('lname');
+            $table->integer('number')->unique;
             $table->integer('date');
             $table->string('gender');
             $table->string('fathers_name');

@@ -33,4 +33,13 @@ class DashboardController extends Controller
     	return view('dashboard.new');
     }
 
+    public function chart()
+      {
+        $result = \DB::table('applicants')
+                    ->where('gender','=','male')
+                    ->orderBy('date', 'ASC')
+                    ->get();
+        return view('dashboard.reports');
+      }
+
 }

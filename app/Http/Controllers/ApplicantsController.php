@@ -96,10 +96,29 @@ class ApplicantsController extends Controller
         $applicant->home_address=$request->get('home_address');
         $applicant->occupation=$request->get('occupation');
         $applicant->image=$fileNameToStore;
+        $applicant->number = $this->getApplicantNumber();
         $applicant->save();
 
         return redirect('applicants')->with('success', 'Application done Successfully');
     }
+
+    public function getApplicantNumber()
+    {
+         do{
+             $rand = $this->generateRandomString(8);
+          }while(!empty(Applicant::where('number',$rand)->first()));
+           return $rand;
+    }
+
+    public function generateRandomString($length) {
+        $characters = '0123456789';
+        $charactersLength = strlen($characters);
+        $randomString = '';
+        for ($i = 0; $i < $length; $i++) {
+            $randomString .= $characters[rand(0, $charactersLength - 1)];
+        }
+        return $randomString;
+     }
 
     /**
      * Display the specified resource.

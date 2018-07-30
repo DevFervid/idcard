@@ -7,7 +7,7 @@
            <div class="panel panel-default">
                <div class="panel-heading"><b>Charts</b></div>
                <div class="panel-body">
-                   <canvas id="canvas" height="280" width="600"></canvas>
+                  <div id="morris-bar-chart"></div>
                </div>
            </div>
        </div>

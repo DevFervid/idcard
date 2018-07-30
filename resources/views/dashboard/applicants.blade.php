@@ -26,6 +26,7 @@
                     <th>First Name</th>
                     <th>Middle Name</th>
                     <th>Last Name</th>
+                    <th>NATIONAL ID</th>
                     <th>Date Of Birth</th>
                     <th>Gender</th>
                     <th>Father's Name</th>
@@ -58,6 +59,7 @@
                     <td>{{$applicant['fname']}}</td>
                     <td>{{$applicant['mname']}}</td>
                     <td>{{$applicant['lname']}}</td>
+                    <td>{{$applicant['number']}}</td>
                     <td>{{$date}}</td>
                     <td>{{$applicant['gender']}}</td>
                     <td>{{$applicant['fathers_name']}}</td>
