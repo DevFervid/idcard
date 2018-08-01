@@ -49,18 +49,18 @@
                         @if(Auth::check())
                         @if(Auth::user()->admin)
                         <li>
-                            <a href="{{ url('dashboard/applicants') }}"><i class="fa fa-edit fa-fw"></i>Applicants</a>
+                            <a href="{{ url('dashboard/applicants') }}"><i class="fa fa-users fa-fw"></i>Applicants</a>
+                        </li>
+                        <li>
+                            <a href="{{ url('dashboard/reports') }}"><i class="fa fa-bar-chart fa-fw"></i> Reports</a>
                         </li>
                         @endif
                         @endif
                         <li>
-                            <a href="{{ url('dashboard/new') }}"><i class="fa fa-edit fa-fw"></i>New Identity Card</a>
+                            <a href="{{ url('dashboard/new') }}"><i class="fa fa-credit-card fa-fw"></i>New Identity Card</a>
                         </li>
                         <li>
-                            <a href="{{ url('dashboard/replace') }}"><i class="fa fa-edit fa-fw"></i> Replace</a>
-                        </li>
-                        <li>
-                            <a href="{{ url('dashboard/reports') }}"><i class="fa fa-edit fa-fw"></i> Reports</a>
+                            <a href="{{ url('dashboard/replace') }}"><i class="fa fa-copy fa-fw"></i> Replace</a>
                         </li>
                         <li>
                             <a href="{{ url('dashboard/particulars') }}"><i class="fa fa-edit fa-fw"></i>Edit Particulars</a>

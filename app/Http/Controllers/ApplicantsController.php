@@ -99,7 +99,7 @@ class ApplicantsController extends Controller
         $applicant->number = $this->getApplicantNumber();
         $applicant->save();
 
-        return redirect('applicants')->with('success', 'Application done Successfully');
+        return redirect('dashboard')->with('success', 'Application done Successfully');
     }
 
     public function getApplicantNumber()
