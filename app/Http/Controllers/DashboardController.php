@@ -10,7 +10,7 @@ class DashboardController extends Controller
 {
     public function __construct()
     {
-        $this->middleware('admin');
+        $this->middleware('auth');
     }
 
     public function dashboard(){
@@ -32,5 +32,14 @@ class DashboardController extends Controller
     public function new(){
     	return view('dashboard.new');
     }
+
+    public function chart()
+      {
+        $result = \DB::table('applicants')
+                    ->where('gender','=','male')
+                    ->orderBy('date', 'ASC')
+                    ->get();
+        return view('dashboard.reports');
+      }
 
 }

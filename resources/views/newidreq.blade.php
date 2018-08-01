@@ -104,7 +104,7 @@
 						
 					
 						<div class="ficon">
-							<button type="button" class="btn btn-default btn-lg btn-block"><a href="{{route('home')}}">Apply Now!</a></button>
+							<button type="button" class="btn btn-default btn-lg btn-block"><a href="{{route('new')}}">Apply Now!</a></button>
 						</div>	
 					</div>	
 					

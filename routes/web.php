@@ -31,8 +31,12 @@ Route::get('admin', 'AdminController@dashboard')->name('admin');
 Route::get('admin/applicants', 'AdminController@applicants')->name('applicants');
 Route::get('admin/reports', 'AdminController@reports')->name('reports');
 
+
+// Route::get('create-chart/{type}','DashboardController@makeChart');
+
 Route::get('dashboard', 'DashboardController@dashboard')->name('dashboard');
 Route::get('dashboard/applicants', 'DashboardController@applicants')->name('applicants');
 Route::get('dashboard/new', 'DashboardController@new')->name('new');
 Route::get('dashboard/replace', 'DashboardController@replace')->name('replace');
 Route::get('dashboard/particulars', 'DashboardController@particulars')->name('particulars');
+Route::get('dashboard/reports','DashboardController@chart');
