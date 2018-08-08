@@ -3,7 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use Auth;
+use App\User;
 use App\Applicant;
 
 class ApplicantsController extends Controller
@@ -73,6 +74,7 @@ class ApplicantsController extends Controller
 
         $applicant= new \App\Applicant;
 
+        $applicant->user_id = Auth::id();
         $applicant->fname=$request->get('fname');
         $applicant->mname=$request->get('mname');
         $applicant->lname=$request->get('lname');
@@ -152,7 +154,7 @@ class ApplicantsController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $applicant= \App\applicant::find($id);
+        $applicant= \App\Applicant::find($id);
         $applicant->name=$request->get('name');
         $applicant->email=$request->get('email');
         $applicant->number=$request->get('number');

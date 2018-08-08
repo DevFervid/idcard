@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Applicant extends Model
 {
     protected $fillable = [
+        'user_id',
         'fname',
     	'mname',
     	'lname',
@@ -28,4 +29,8 @@ class Applicant extends Model
     	'image'
 
     ];
+    
+    public function user(){
+        return $this->belongsTo('App\User');
+    }
 }
