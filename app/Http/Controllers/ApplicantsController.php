@@ -67,7 +67,7 @@ class ApplicantsController extends Controller
             $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
             $extension = $request->file('image')->getClientOriginalExtension();
             $fileNameToStore = $filename.'_'.time().'.'.$extension;
-            $path = $request->file('image')->storeAs('/images/', $fileNameToStore);
+            $path = $request->file('image')->storeAs('public/images', $fileNameToStore);
         }else {
             $fileNameToStore = 'default.png';
         }

@@ -162,6 +162,7 @@ return [
 
         ConsoleTVs\Charts\ChartsServiceProvider::class,
         Fx3costa\LaravelChartJs\Providers\ChartjsServiceProvider::class,
+        Barryvdh\DomPDF\ServiceProvider::class,
 
     ],
 
@@ -212,6 +213,7 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
         'Charts' => ConsoleTVs\Charts\Facades\Charts::class,
+        'PDF' => Barryvdh\DomPDF\Facade::class,
 
     ],
 
