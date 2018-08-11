@@ -65,7 +65,7 @@
 	</header>
     
 	<div class="jumbotron">
-		<h2>Replace ID Card </h2>		
+		<h2>Change Particulars </h2>		
 	</div>
 	
 	<div class="blog">
@@ -76,9 +76,9 @@
 						<h3>Requirements</h3>							
 						<p>
 							 <ul>
-                     			<li>Persons who qualify for this service: Persons who have lost 2nd generation ID card, Persons in possession of mutilated 2nd generation ID card </li>
+                     			<li>Eligible for Kenyan citizen ID card holder who want to change name upon marriage, change of location</li>
   								<li>A police abstract or a letter from an administrative officer certifying the loss.</li>
-  								<li>Your lost ID card number or copy of lost ID.</li>
+  								<li>Your ID card number or copy of ID.</li>
   								<li>A passport size photograph.</li>
   								<li> Ksh 300/= for replacement.</li>
 
@@ -89,7 +89,7 @@
 						<p>
 								<ol>
                          		<li>Create an account or login if you already have an account. </li>
-  								<li>Follow the instructions to fill the ID replacement application form provided.</li>
+  								<li>Follow the instructions to fill the ID change of particulars application form provided.</li>
   								<li>Upload required documents as per the instructions.</li>
   								<li>Download and print 2 copies of your fingerprint form on both sides.</li>
   								<li>present the fingerprint form and the original birth certificate to Nearby District Officer/ District Commission headquaters for fingerprint processing.</li>

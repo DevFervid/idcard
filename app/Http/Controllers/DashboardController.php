@@ -76,7 +76,7 @@ class DashboardController extends Controller
             'NATIONAL ID' => 'number',
             // 'Status' => function($result) { // You can do if statement or any action do you want inside this closure
             //     return ($result->balance > 100000) ? 'Rich Man' : 'Normal Guy';
-            }
+
         ];
 
         /*
