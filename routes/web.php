@@ -40,3 +40,4 @@ Route::get('dashboard/new', 'DashboardController@new')->name('new');
 Route::get('dashboard/replace', 'DashboardController@replace')->name('replace');
 Route::get('dashboard/particulars', 'DashboardController@particulars')->name('particulars');
 Route::get('dashboard/reports','DashboardController@chart');
+Route::get('/downloadPDF/{id}','DashboardController@downloadPDF');

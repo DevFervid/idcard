@@ -75,7 +75,9 @@
                                     <td>{{$applicant['village']}}</td>
                                     <td>{{$applicant['home_address']}}</td>
                                     <td>{{$applicant['occupation']}}</td>
-                                    <td>{{$applicant['image']}}</td>
+                                    <td>
+                                        <img class="img-fluid" src="/storage/images/{{$applicant->image}}" style="width: 100px; height: 70px">
+                                    </td>
                                     
                                     <td>
                                         <a href="{{action('ApplicantsController@edit', $applicant['id'])}}" class="btn btn-warning">Edit</a>
@@ -84,6 +86,12 @@
                                         <input name="_method" type="hidden" value="DELETE">
                                         <button class="btn btn-danger" type="submit">Delete</button>
                                       </form>
+                                      <br>
+                                      <a href="{{action('DashboardController@downloadPDF', $applicant['id'])}}" class="btn btn-info">Print Details</a>
+                                    {{-- <div class="alert alert-info">
+                                        <button type="button" class="close" data-dismiss="alert">&times;</button>
+                                        <button class="btn btn-primary" onClick="window.print();"><i class="icon-save icon-large"></i>Print Details</button>
+                                    </div> --}}
                                     </td>
                                   </tr>
                                   @endforeach
