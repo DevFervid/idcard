@@ -72,7 +72,7 @@ class ApplicantsController extends Controller
             $fileNameToStore = 'default.png';
         }
 
-        $applicant= new \App\Applicant;
+        $applicant= new Applicant;
 
         $applicant->user_id = Auth::id();
         $applicant->fname=$request->get('fname');
@@ -141,8 +141,8 @@ class ApplicantsController extends Controller
      */
     public function edit($id)
     {
-        $applicant = \App\Applicant::find($id);
-        return view('applicants.edit',compact('applicant','id'));
+        $applicant = Applicant::find($id);
+        return view('dashboard.applicants.edit',compact('applicant','id'));
     }
 
     /**
@@ -152,15 +152,15 @@ class ApplicantsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update($request, $id)
     {
-        $applicant= \App\Applicant::find($id);
+        $applicant= Applicant::find($id);
         $applicant->name=$request->get('name');
         $applicant->email=$request->get('email');
         $applicant->number=$request->get('number');
         $applicant->office=$request->get('office');
         $applicant->save();
-        return redirect('applicants');
+        return redirect('dashboard');
     }
 
     /**
@@ -171,7 +171,7 @@ class ApplicantsController extends Controller
      */
     public function destroy($id)
     {
-        $applicant = \App\Applicant::find($id);
+        $applicant = Applicant::find($id);
         $applicant->delete();
         return redirect('applicants')->with('success','Information has been  deleted');
     }

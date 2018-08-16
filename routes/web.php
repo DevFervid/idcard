@@ -25,19 +25,26 @@ Route::get('/replace', 'idcardController@replace')->name('replace');
 Route::get('/particulars', 'idcardController@particulars')->name('particulars');
 
 Route::resource('applications', 'ApplicationsController');
-Route::resource('applicants', 'ApplicantsController');
 
 Route::get('admin', 'AdminController@dashboard')->name('admin');
 Route::get('admin/applicants', 'AdminController@applicants')->name('applicants');
 Route::get('admin/reports', 'AdminController@reports')->name('reports');
+Route::resource('applicants', 'ApplicantsController');
 
 
 // Route::get('create-chart/{type}','DashboardController@makeChart');
 
-Route::get('dashboard', 'DashboardController@dashboard')->name('dashboard');
-Route::get('dashboard/applicants', 'DashboardController@applicants')->name('applicants');
-Route::get('dashboard/new', 'DashboardController@new')->name('new');
-Route::get('dashboard/replace', 'DashboardController@replace')->name('replace');
-Route::get('dashboard/particulars', 'DashboardController@particulars')->name('particulars');
-Route::get('dashboard/reports','DashboardController@chart');
-Route::get('/downloadPDF/{id}','DashboardController@downloadPDF');
+//dashboard routes
+Route::prefix('dashboard')->group(function() {
+
+    Route::get('/', 'DashboardController@dashboard')->name('dashboard');
+    Route::get('applicants', 'DashboardController@applicants')->name('applicants');
+    Route::get('new', 'DashboardController@new')->name('new');
+    Route::get('update', 'DashboardController@update')->name('update');
+    Route::get('replace', 'DashboardController@replace')->name('replace');
+    Route::get('particulars', 'DashboardController@particulars')->name('particulars');
+    Route::get('reports', 'DashboardController@chart');
+    Route::get('/downloadPDF/{id}', 'DashboardController@downloadPDF');
+//    Route::resource('applicants', 'ApplicantsController');
+
+});

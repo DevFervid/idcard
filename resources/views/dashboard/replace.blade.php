@@ -23,7 +23,7 @@
                                   </div>
                               @endif
                               
-                              <form action="{{url('applications')}}" method="POST" enctype="multipart/form-data">
+                              <form action="{{url('dashboard')}}" method="POST" enctype="multipart/form-data">
                                   @csrf
 
                                   <div class="input-group mb-3">

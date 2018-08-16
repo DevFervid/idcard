@@ -29,7 +29,7 @@
                                       </div>
                                     </div><br><br>
                                 
-                                <form action="{{url('applications')}}" method="POST" enctype="multipart/form-data">
+                                <form action="{{action('DashboardController@update')}}}}" method="POST" enctype="multipart/form-data">
                                     @csrf
                                     <div class="row">
                                         <div class="col">

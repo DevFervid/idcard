@@ -98,10 +98,6 @@
                                 </tbody>
                             </table>
                             <!-- /.table-responsive -->
-                            <div class="well">
-                                <h4>DataTables Usage Information</h4>
-                                <p>DataTables is a very flexible, advanced tables plugin for jQuery. In SB Admin, we are using a specialized version of DataTables built for Bootstrap 3. We have also customized the table headings to use Font Awesome icons in place of images.
-                            </div>
                         </div>
                         <!-- /.panel-body -->
                     </div>
