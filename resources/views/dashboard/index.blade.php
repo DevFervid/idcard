@@ -155,7 +155,7 @@
                     Your Details
                 </div>
                 <div class="panel-body">
-                    <p>dshcfdvshvwevewihvihvwih</p>
+                    <p><h4>You are logged in! Welcome</h4></p>
                 </div>                                
             </div>
             @endif

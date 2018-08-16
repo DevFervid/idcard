@@ -41,3 +41,7 @@ Route::get('dashboard/replace', 'DashboardController@replace')->name('replace');
 Route::get('dashboard/particulars', 'DashboardController@particulars')->name('particulars');
 Route::get('dashboard/reports','DashboardController@chart');
 Route::get('/downloadPDF/{id}','DashboardController@downloadPDF');
+
+Route::get('dashboard/confirm', 'DashboardController@confirm')->name('confirm');
+Route::get('dashboard/payment', 'DashboardController@payment')->name('payment');
+
