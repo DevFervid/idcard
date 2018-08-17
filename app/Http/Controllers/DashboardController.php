@@ -47,7 +47,8 @@ class DashboardController extends Controller
                     ->orderBy('date', 'ASC')
                     ->get();
         return view('dashboard.reports');
-    }
+      }
+
 
     public function downloadPDF($id){
         $applicant = Applicant::find($id);
@@ -55,6 +56,7 @@ class DashboardController extends Controller
         $pdf = PDF::loadView('dashboard.pdf', compact('applicant'));
         return $pdf->download('applicant.pdf');
     }
+
 
     public function update($request, $id)
     {
@@ -65,5 +67,12 @@ class DashboardController extends Controller
         $applicant->office=$request->get('office');
         $applicant->save();
         return redirect('dashboard')->with('success', 'Information updated successfully');
+    }
+    public function confirm(){
+        return view('dashboard.confirm');
+    }
+
+    public function payment(){
+        return view('dashboard.payment');
     }
 }

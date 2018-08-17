@@ -6,44 +6,44 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h1 class="page-header">National ID Application System</h1>
+                        <h1 class="page-header">ID Card Application</h1>
                     </div>
                     <!-- /.col-lg-12 -->
                     <div class="container">
                       <form method="post" action="{{url('applicants')}}" enctype="multipart/form-data">
                         @csrf
                         <div class="row">
-                          <div class="col-md-4"></div>
-                          <div class="form-group col-md-4">
+                          <div class="col-md-0"></div>
+                          <div class="form-group col-md-6">
                             <label for="First Name">First Name:</label>
                             <input type="text" class="form-control" name="fname">
                           </div>
                         </div>
                         <div class="row">
-                          <div class="col-md-4"></div>
-                          <div class="form-group col-md-4">
+                          <div class="col-md-0"></div>
+                          <div class="form-group col-md-6">
                             <label for="Middel Name">Middel Name:</label>
                             <input type="text" class="form-control" name="mname">
                           </div>
                         </div>
                         <div class="row">
-                          <div class="col-md-4"></div>
-                          <div class="form-group col-md-4">
+                          <div class="col-md-0"></div>
+                          <div class="form-group col-md-6">
                             <label for="Last Name">Last Name:</label>
                             <input type="text" class="form-control" name="lname">
                           </div>
                         </div>
                         <div class="row">
-                          <div class="col-md-4"></div>
-                          <div class="form-group col-md-4">
+                          <div class="col-md-0"></div>
+                          <div class="form-group col-md-6">
                             <strong>Date Of Birth : </strong>  
                             <input class="date form-control"  type="text" id="datepicker" name="date">   
                          </div>
                         </div>
                         <div class="row">
-                          <div class="col-md-4"></div>
-                            <div class="form-group col-md-4">
-                                <lable>Gender</lable>
+                          <div class="col-md-0"></div>
+                            <div class="form-group col-md-6">
+                                <lable><strong> Gender: </strong></lable>
                                 <select name="gender">
                                   <option value="Male">Male</option>
                                   <option value="Female">Female</option> 
@@ -51,23 +51,23 @@
                             </div>
                           </div>
                         <div class="row">
-                          <div class="col-md-4"></div>
-                          <div class="form-group col-md-4">
+                          <div class="col-md-0"></div>
+                          <div class="form-group col-md-6">
                             <label for="Fathers Name">Fathers Name:</label>
                             <input type="text" class="form-control" name="fathers_name">
                           </div>
                         </div>
                         <div class="row">
-                          <div class="col-md-4"></div>
-                          <div class="form-group col-md-4">
+                          <div class="col-md-0"></div>
+                          <div class="form-group col-md-6">
                             <label for="Mothers Name">Mothers Name:</label>
                             <input type="text" class="form-control" name="mothers_name">
                           </div>
                         </div>
                         <div class="row">
-                          <div class="col-md-4"></div>
+                          <div class="col-md-0"></div>
                             <div class="form-group col-md-4">
-                                <lable>Marital</lable>
+                                <lable><strong>Marital Status:</strong> </lable>
                                 <select name="marital">
                                   <option value="Single">Single</option>
                                   <option value="Married">Married</option> 
@@ -77,23 +77,23 @@
                             </div>
                           </div>
                         <div class="row">
-                          <div class="col-md-4"></div>
-                          <div class="form-group col-md-4">
+                          <div class="col-md-0"></div>
+                          <div class="form-group col-md-6">
                             <label for="Husband Name">Husband Name:</label>
                             <input type="text" class="form-control" name="husband_name">
                           </div>
                         </div>
                         <div class="row">
-                          <div class="col-md-4"></div>
-                          <div class="form-group col-md-4">
+                          <div class="col-md-0"></div>
+                          <div class="form-group col-md-6">
                             <label for="Fathers Name">Husband ID:</label>
                             <input type="text" class="form-control" name="husband_idno">
                           </div>
                         </div>
                         <div class="row">
-                          <div class="col-md-4"></div>
-                            <div class="form-group col-md-4">
-                                <lable>Tribe</lable>
+                          <div class="col-md-0"></div>
+                            <div class="form-group col-md-6">
+                                <lable><strong>Tribe: </strong></lable>
                                 <select name="tribe">
                                   <option selected>Choose...</option>
                                   <option value="Kamba">Kamba</option>
@@ -105,16 +105,16 @@
                             </div>
                           </div>
                         <div class="row">
-                          <div class="col-md-4"></div>
-                            <div class="form-group col-md-4">
+                          <div class="col-md-0"></div>
+                            <div class="form-group col-md-6">
                               <label for="Clan">Clan:</label>
                               <input type="text" class="form-control" name="clan">
                             </div>
                           </div>
                         <div class="row">
-                          <div class="col-md-4"></div>
-                            <div class="form-group col-md-4">
-                                <lable>Home District</lable>
+                          <div class="col-md-0"></div>
+                            <div class="form-group col-md-6">
+                                <lable><strong>Home District: </strong></lable>
                                 <select name="district">
                                   <option selected>Choose...</option>
                                   <option value="Kitui West District">Kitui West District</option>
@@ -126,9 +126,9 @@
                             </div>
                           </div>
                         <div class="row">
-                          <div class="col-md-4"></div>
-                            <div class="form-group col-md-4">
-                                <lable>Division</lable>
+                          <div class="col-md-0"></div>
+                            <div class="form-group col-md-6">
+                                <lable><strong>Division: </strong></lable>
                                 <select name="division">
                                   <option selected>Choose...</option>
                                   <option value="Mwingi Division">Mwingi Division</option>
@@ -140,9 +140,9 @@
                             </div>
                           </div>
                         <div class="row">
-                          <div class="col-md-4"></div>
-                            <div class="form-group col-md-4">
-                                <lable>Constituency</lable>
+                          <div class="col-md-0"></div>
+                            <div class="form-group col-md-6">
+                                <lable><strong>Constituency: </strong></lable>
                                 <select name="constituency">
                                   <option selected>Choose...</option>
                                   <option value="Mwinci West">Mwinci West</option>
@@ -154,9 +154,9 @@
                             </div>
                           </div>
                         <div class="row">
-                          <div class="col-md-4"></div>
-                            <div class="form-group col-md-4">
-                                <lable>Location</lable>
+                          <div class="col-md-0"></div>
+                            <div class="form-group col-md-6">
+                                <lable><strong>Location: </strong></lable>
                                 <select name="location">
                                   <option selected>Choose...</option>
                                   <option value="Migwani">Migwani</option>
@@ -168,9 +168,9 @@
                             </div>
                           </div>
                         <div class="row">
-                          <div class="col-md-4"></div>
-                            <div class="form-group col-md-4">
-                                <lable>Sub-location</lable>
+                          <div class="col-md-0"></div>
+                            <div class="form-group col-md-6">
+                                <lable><strong>Sub-location: </strong></lable>
                                 <select name="sub_location">
                                   <option selected>Choose...</option>
                                   <option value="Itoloni">Itoloni</option>
@@ -182,9 +182,9 @@
                             </div>
                           </div>
                         <div class="row">
-                          <div class="col-md-4"></div>
-                            <div class="form-group col-md-4">
-                                <lable>Village</lable>
+                          <div class="col-md-0"></div>
+                            <div class="form-group col-md-6">
+                                <lable><strong>Village:</strong></lable>
                                 <select name="village">
                                   <option selected>Choose...</option>
                                   <option value="Kamutisya">Kamutisya</option>
@@ -196,28 +196,28 @@
                             </div>
                           </div>
                         <div class="row">
-                          <div class="col-md-4"></div>
-                            <div class="form-group col-md-4">
+                          <div class="col-md-0"></div>
+                            <div class="form-group col-md-6">
                               <label for="Number">Home Address:</label>
                               <input type="text" class="form-control" name="home_address">
                             </div>
                           </div>
                         <div class="row">
-                          <div class="col-md-4"></div>
-                            <div class="form-group col-md-4">
+                          <div class="col-md-0"></div>
+                            <div class="form-group col-md-6">
                               <label for="Number">Occupation:</label>
                               <input type="text" class="form-control" name="occupation">
                             </div>
-                          </div>
+                          </div><br>
                         <div class="row">
-                          <div class="col-md-4"></div>
-                          <div class="form-group col-md-4">
+                          <div class="col-md-0"></div>
+                          <div class="form-group col-md-6">
                             <input type="file" name="image">    
                          </div>
                         </div>
                         <div class="row">
-                          <div class="col-md-4"></div>
-                          <div class="form-group col-md-4" style="margin-top:60px">
+                          <div class="col-md-0"></div>
+                          <div class="form-group col-md-6" style="margin-top:50px">
                             <button type="submit" class="btn btn-success">Submit</button>
                           </div>
                         </div>

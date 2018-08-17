@@ -30,7 +30,7 @@ Route::get('admin', 'AdminController@dashboard')->name('admin');
 Route::get('admin/applicants', 'AdminController@applicants')->name('applicants');
 Route::get('admin/reports', 'AdminController@reports')->name('reports');
 Route::resource('applicants', 'ApplicantsController');
-
+Route::get('bar-chart', 'ChartController@index');
 
 // Route::get('create-chart/{type}','DashboardController@makeChart');
 
@@ -45,6 +45,9 @@ Route::prefix('dashboard')->group(function() {
     Route::get('particulars', 'DashboardController@particulars')->name('particulars');
     Route::get('reports', 'DashboardController@chart');
     Route::get('/downloadPDF/{id}', 'DashboardController@downloadPDF');
-//    Route::resource('applicants', 'ApplicantsController');
-
+   	Route::resource('applicants', 'ApplicantsController');
+   	Route::get('confirm', 'DashboardController@confirm')->name('confirm');
+	Route::get('payment', 'DashboardController@payment')->name('payment');
 });
+
+
