@@ -17,8 +17,8 @@
     <link href="https://cdn.jsdelivr.net/npm/gijgo@1.9.6/css/gijgo.min.css" rel="stylesheet" type="text/css" />
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/date.css') }}" rel="stylesheet">
-    
+    <link href="{{ asset('css/date.css') }}" rel="stylesheet">  
+
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
