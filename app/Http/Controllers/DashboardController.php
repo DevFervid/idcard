@@ -71,8 +71,18 @@ class DashboardController extends Controller
     public function confirm(){
         return view('dashboard.confirm');
     }
+    public function confirm1(){
+        return view('dashboard.confirm1');
+    }
 
     public function payment(){
         return view('dashboard.payment');
+    }
+    public function payment1(){
+        return view('dashboard.payment1');
+    }public function notification1(){
+        return view('dashboard.notification1');
+    }public function notification(){
+        return view('dashboard.notification');
     }
 }

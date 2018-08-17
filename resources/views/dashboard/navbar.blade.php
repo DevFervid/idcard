@@ -60,10 +60,10 @@
                             <a href="{{ url('dashboard/new') }}"><i class="fa fa-credit-card fa-fw"></i>New Identity Card</a>
                         </li>
                         <li>
-                            <a href="{{ url('dashboard/replace') }}"><i class="fa fa-copy fa-fw"></i> Replace</a>
+                            <a href="{{ url('dashboard/confirm1') }}"><i class="fa fa-copy fa-fw"></i> Replace</a>
                         </li>
                         <li>
-                            <a href="{{ url('dashboard/particulars') }}"><i class="fa fa-edit fa-fw"></i>Edit Particulars</a>
+                            <a href="{{ url('dashboard/confirm') }}"><i class="fa fa-edit fa-fw"></i>Edit Particulars</a>
                         </li>
                     </ul>
                 </div>

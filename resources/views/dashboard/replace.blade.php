@@ -101,7 +101,9 @@
                                   </div>
                                   <br><br>
 
-                                  <button class="btn btn-primary" type="submit">Submit form</button>
+                                  <a href="{{url ('dashboard/payment1')}}">
+                                        <button class="btn btn-primary" type="button">Submit form</button>
+                                  </a>
                               </form>
                               
                           </div>

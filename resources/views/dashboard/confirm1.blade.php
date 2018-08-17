@@ -30,7 +30,7 @@
                                     <input type="text" class="form-control" placeholder="Enter your ID Number" aria-label="Recipient's username" aria-describedby="basic-addon2">
                                     <br><br>
                                     <div class="input-group-append">
-                                      <a href="{{url ('dashboard/particulars')}}">
+                                      <a href="{{url ('dashboard/replace')}}">
                                         <button class="btn btn-outline-primary" type="button">Confirm Identity</button>
                                       </a>
                                       

@@ -41,9 +41,9 @@
                                     <input type="text" class="form-control" placeholder="e.g MH34UWYR60" aria-label="Recipient's username" aria-describedby="basic-addon2">
                                     <br><br><br><br>
                                     <div class="input-group-append">
-                                      <a href="{{url('dashboard/notification')}}">
+                                      <a href="{{url('dashboard/notification1')}}">
                                         <button class="btn btn-outline-primary" type="button">Submit</button>
-                                      </a>  
+                                      </a>                                      
                                     </div>
                                   </div><br><br>
         </div>

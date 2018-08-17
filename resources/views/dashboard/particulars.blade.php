@@ -22,12 +22,12 @@
                                     </div>
                                 @endif
                                 
-                                <form action="{{action('DashboardController@update')}}}}" method="POST" enctype="multipart/form-data">
+                                <form action="{{url('dashboard/payment')}}}}" method="POST" enctype="multipart/form-data">
                                     @csrf
                                     <div class="input-group mb-2 col-lg-10">
                                          <label>First Name</label>
                                          <fieldset disabled="">
-                                         <input type="text" class="form-control" name="fname" placeholder="{{ Auth::user()->fname }}">
+                                         <input type="text" class="form-control" name="fname" placeholder="{{ Auth::user()->name }}">
                                          </fieldset>
                                         </div><br>
                                         <div class="input-group mb-2 col-lg-10">
@@ -166,8 +166,10 @@
                                       
                                     </div>
                                     <br><br>
-
-                                    <button class="btn btn-primary" type="submit">Submit form</button>
+                                    <a href="{{url ('dashboard/payment')}}">
+                                        <button class="btn btn-primary" type="button">Submit form</button>
+                                    </a>
+                                    
                                 </form>
                                 
                             </div>

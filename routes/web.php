@@ -46,8 +46,12 @@ Route::prefix('dashboard')->group(function() {
     Route::get('reports', 'DashboardController@chart');
     Route::get('/downloadPDF/{id}', 'DashboardController@downloadPDF');
    	Route::resource('applicants', 'ApplicantsController');
-   	Route::get('confirm', 'DashboardController@confirm')->name('confirm');
-	Route::get('payment', 'DashboardController@payment')->name('payment');
+    Route::get('confirm', 'DashboardController@confirm')->name('confirm');
+   	Route::get('confirm1', 'DashboardController@confirm1')->name('confirm1');
+    Route::get('payment', 'DashboardController@payment')->name('payment');
+    Route::get('payment1', 'DashboardController@payment1')->name('payment1');
+    Route::get('notification1', 'DashboardController@notification1')->name('notification1');
+	Route::get('notification', 'DashboardController@notification')->name('notification');
 });
 
 
