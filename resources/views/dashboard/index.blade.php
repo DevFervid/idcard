@@ -160,6 +160,7 @@
         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-3 toppad" >
 
     @foreach($applicants as $applicant)
+    
         <div class="panel panel-info">
             <div class="panel-heading">
               <h3 class="panel-title">{{$applicant->fname}}</h3>
