@@ -19,8 +19,8 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/date.css') }}" rel="stylesheet">
 
-    {!! Charts::styles() !!}
-    
+{{--     {!! Charts::styles() !!}
+ --}}    
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>

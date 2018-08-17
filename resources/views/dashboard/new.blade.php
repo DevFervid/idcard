@@ -12,13 +12,12 @@
                     <div class="container">
                       <form method="post" action="{{url('applicants')}}" enctype="multipart/form-data">
                         @csrf
-                        <div class="row">
-                          <div class="col-md-0"></div>
-                          <div class="form-group col-md-6">
-                            <label for="First Name">First Name:</label>
-                            <input type="text" class="form-control" name="fname">
-                          </div>
-                        </div>
+                        <div class="input-group mb-0 col-lg-6">
+                                       <label>First Name</label>
+                                       <fieldset disabled="">
+                                       <input type="text" class="form-control" name="name" placeholder="{{ Auth::user()->name }}">
+                                       </fieldset>
+                                      </div><br>
                         <div class="row">
                           <div class="col-md-0"></div>
                           <div class="form-group col-md-6">
