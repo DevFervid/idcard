@@ -47,6 +47,7 @@
                           <div class="form-group col-md-6">
                             <strong>Date Of Birth : </strong>  
                             <input class="date form-control"  type="date" id="date" name="date" required="">   
+                            <input class="date form-control"  type="date" id="date" name="date">   
                          </div>
                         </div>
                         <div class="row">

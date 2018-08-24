@@ -26,12 +26,6 @@ Route::get('/particulars', 'idcardController@particulars')->name('particulars');
 
 Route::resource('applications', 'ApplicationsController');
 
-Route::get('admin', 'AdminController@dashboard')->name('admin');
-Route::get('admin/applicants', 'AdminController@applicants')->name('applicants');
-Route::get('admin/reports', 'AdminController@reports')->name('reports');
-Route::resource('applicants', 'ApplicantsController');
-Route::get('bar-chart', 'ChartController@index');
-
 // Route::get('create-chart/{type}','DashboardController@makeChart');
 
 //dashboard routes
@@ -44,7 +38,7 @@ Route::prefix('dashboard')->group(function() {
     Route::get('replace', 'DashboardController@replace')->name('replace');
     Route::get('particulars', 'DashboardController@particulars')->name('particulars');
     Route::get('reports', 'DashboardController@chart');
-    Route::get('/downloadPDF/{id}', 'DashboardController@downloadPDF');
+    // Route::get('/downloadPDF/{id}', 'DashboardController@downloadPDF');
    	Route::resource('applicants', 'ApplicantsController');
     Route::get('confirm', 'DashboardController@confirm')->name('confirm');
    	Route::get('confirm1', 'DashboardController@confirm1')->name('confirm1');
@@ -54,4 +48,11 @@ Route::prefix('dashboard')->group(function() {
 	Route::get('notification', 'DashboardController@notification')->name('notification');
 });
 
+Route::prefix('admin')->group(function() {
+
+    Route::get('/', 'AdminController@index')->name('index');
+    Route::get('reports', 'AdminController@chart');
+    Route::get('applicants', 'AdminController@applicants')->name('applicants'); 
+    Route::get('/downloadPDF/{id}', 'AdminController@downloadPDF');
+});
 

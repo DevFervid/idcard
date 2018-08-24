@@ -38,5 +38,12 @@ class UsersTableSeeder extends Seeder
             'email' => 'muel@gmail.com',
             
         ]);
+        // $user = \App\User::create([
+        //     'name' => 'admin',
+        //     'email' => 'admin@gmail.com',
+        //     'password' => bcrypt('admin')
+        // ]);
+
+        // $user->attachRole('super_admin');
     }
 }
