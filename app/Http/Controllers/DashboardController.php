@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use Auth;
 use PDF;
 use App\Applicant;
+use Session;
+use App\User;
 use Illuminate\Support\Facades\DB;
 
 class DashboardController extends Controller
