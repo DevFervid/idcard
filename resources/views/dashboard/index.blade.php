@@ -11,7 +11,6 @@
     </div>
     <!-- /.row -->
                 <!-- /.row -->
-   @role('superadministrator')
     <div class="row">
         <div class="col-lg-6">
             <div class="panel panel-default">
@@ -145,7 +144,6 @@
         </div>
         <!-- /.col-lg-12 -->
     </div>
-    @endrole
     {{-- <div class="panel panel-primary">
         <div class="panel-heading">
             Your Details
@@ -170,10 +168,9 @@
                 <div class=" col-md-9 col-lg-9 "> 
                   <table class="table table-user-information">
                     <tbody>
-                    <tr>
+                      <tr>
                         <td>ID Number:</td>
-                        <td>{{$applicant->number}}</td>
-                           
+                        <td>{{$applicant->number}}</td>    
                       </tr>
                       <tr>
                         <td>First Name:</td>
@@ -225,6 +222,9 @@
                         <td>Tribe:</td>
                         <td>{{$applicant->tribe}}</td>
                       </tr>
+
+
+                      @endforeach
           @foreach($applicants as $applicant)
     @if(Auth::check())
       @if(Auth::id() == $applicant->user->id)
