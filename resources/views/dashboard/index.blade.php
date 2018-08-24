@@ -11,8 +11,7 @@
     </div>
     <!-- /.row -->
                 <!-- /.row -->
-    @if(Auth::check())
-    @if(Auth::user()->admin)
+   @role('superadministrator')
     <div class="row">
         <div class="col-lg-6">
             <div class="panel panel-default">
@@ -146,7 +145,7 @@
         </div>
         <!-- /.col-lg-12 -->
     </div>
-    @else
+    @endrole
     {{-- <div class="panel panel-primary">
         <div class="panel-heading">
             Your Details
@@ -273,8 +272,6 @@
         </div>
     @endforeach
     </div>
-    @endif
-    @endif
 </div>
 <!-- /#page-wrapper -->
 

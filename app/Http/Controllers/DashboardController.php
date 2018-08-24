@@ -29,7 +29,8 @@ class DashboardController extends Controller
     }
 
     public function replace(){
-    	return view('dashboard.replace');
+        $applicant = Applicant::get();
+    	return view('dashboard.replace', compact('applicant'));
     }
 
     public function particulars(){
@@ -47,15 +48,15 @@ class DashboardController extends Controller
                     ->orderBy('date', 'ASC')
                     ->get();
         return view('dashboard.reports');
-      }
-
-
-    public function downloadPDF($id){
-        $applicant = Applicant::find($id);
-
-        $pdf = PDF::loadView('dashboard.pdf', compact('applicant'));
-        return $pdf->download('applicant.pdf');
     }
+
+
+    // public function downloadPDF($id){
+    //     $applicant = Applicant::find($id);
+
+    //     $pdf = PDF::loadView('dashboard.pdf', compact('applicant'));
+    //     return $pdf->download('applicant.pdf');
+    // }
 
 
     public function update($request, $id)

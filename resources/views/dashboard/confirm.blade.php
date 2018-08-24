@@ -23,19 +23,18 @@
                                   </div>
                               @endif
                               
-                              <form action="{{url('applications')}}" method="POST" enctype="multipart/form-data">
+                              <form action="{{ url('dashboard/particulars')}}" method="get">
                                   @csrf
-
+                                  
                                   <div class="input-group mb-3">
-                                    <input type="text" class="form-control" placeholder="Enter your ID Number" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                    <label for="">National ID</label>
+                                    <input type="text" class="form-control" id="trans" name="idno" value="">
                                     <br><br>
                                     <div class="input-group-append">
-                                      <a href="{{url ('dashboard/particulars')}}">
-                                        <button class="btn btn-outline-primary" type="button">Confirm Identity</button>
-                                      </a>
-                                      
+                                        <button class="btn btn-outline-primary" type="submit">Confirm Identity <span class="fa fa-check-circle-o"></span>
+                                        </button>         
                                     </div>
-                                  </div><br><br>
+                                  </div>
         </div>
         <!-- /#page-wrapper -->
 

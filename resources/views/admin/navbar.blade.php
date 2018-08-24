@@ -44,16 +44,13 @@
                 <div class="sidebar-nav navbar-collapse">
                     <ul class="nav" id="side-menu">
                         <li>
-                            <a href="{{ url('dashboard') }}"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                            <a href="{{ url('admin') }}"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
                         </li>
                         <li>
-                            <a href="{{ url('dashboard/new') }}"><i class="fa fa-credit-card fa-fw"></i>New Identity Card</a>
-                        </li>                       
-                        <li>
-                            <a href="{{ url('dashboard/confirm1') }}"><i class="fa fa-copy fa-fw"></i> Replace</a>
+                            <a href="{{ url('admin/applicants') }}"><i class="fa fa-users fa-fw"></i>Applicants</a>
                         </li>
                         <li>
-                            <a href="{{ url('dashboard/confirm') }}"><i class="fa fa-edit fa-fw"></i>Edit Particulars</a>
+                            <a href="{{ url('admin/reports') }}"><i class="fa fa-bar-chart fa-fw"></i> Reports</a>
                         </li>
                     </ul>
                 </div>
