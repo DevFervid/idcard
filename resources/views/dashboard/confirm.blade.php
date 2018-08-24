@@ -27,6 +27,7 @@
                                   @csrf
                                   
                                   <div class="input-group mb-3">
+                                    <input type="number" class="form-control" placeholder="Enter your ID Number" aria-label="Recipient's username" aria-describedby="basic-addon2">
                                     <label for="">National ID</label>
                                     <input type="text" class="form-control" id="trans" name="idno" value="">
                                     <br><br>

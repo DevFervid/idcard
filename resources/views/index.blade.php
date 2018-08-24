@@ -50,15 +50,12 @@
 							<h1><img src="{{asset('img/slider/logo9.png')}}" alt=""/></h1>
 						</div>
 					</div>
-					
 					<div class="navbar-collapse collapse">							
 						<div class="menu">
 							<ul class="nav nav-tabs" role="tablist">
 								<li role="presentation"><a href="{{route('index')}}" class="active">Home</a></li>
 								<li role="presentation"><a href="{{route('services')}}">Services</a></li>
 								<li role="presentation"><a href="{{route('contact')}}" >Contact</a></li>	
-								
-								
 							</ul>
 						</div>
 					</div>						
@@ -136,11 +133,7 @@
 			</div>				
 		</div>
 	</div>
-    
-
-   
-
-    
+	 
 	<div class="jumbotron">
 		<h1>You can <span>get your account</span> NOW!</h1>
 		<p>Now availabe across all devices.</p>
