@@ -27,7 +27,7 @@
                                   @csrf
 
                                   <div class="input-group mb-3">
-                                    <input type="text" class="form-control" placeholder="Enter your ID Number" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                    <input type="number" class="form-control" placeholder="Enter your ID Number" aria-label="Recipient's username" aria-describedby="basic-addon2">
                                     <br><br>
                                     <div class="input-group-append">
                                       <a href="{{url ('dashboard/particulars')}}">

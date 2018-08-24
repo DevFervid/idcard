@@ -4,6 +4,16 @@
 <!-- Page Content -->
         <div id="page-wrapper">
             <div class="container-fluid">
+
+              @if ($errors->any())
+                  <div class="alert alert-danger">
+                      <ul>
+                          @foreach ($errors->all() as $error)
+                              <li>{{ $error }}</li>
+                          @endforeach
+                      </ul>
+                  </div>
+              @endif
                 <div class="row">
                     <div class="col-lg-12">
                         <h1 class="page-header">ID Card Application</h1>
@@ -21,22 +31,22 @@
                         <div class="row">
                           <div class="col-md-0"></div>
                           <div class="form-group col-md-6">
-                            <label for="Middel Name">Middel Name:</label>
-                            <input type="text" class="form-control" name="mname">
+                            <label for="Middle Name">Middle Name:</label>
+                            <input type="text" class="form-control" name="mname" required="">
                           </div>
                         </div>
                         <div class="row">
                           <div class="col-md-0"></div>
                           <div class="form-group col-md-6">
                             <label for="Last Name">Last Name:</label>
-                            <input type="text" class="form-control" name="lname">
+                            <input type="text" class="form-control" name="lname" required="">
                           </div>
                         </div>
                         <div class="row">
                           <div class="col-md-0"></div>
                           <div class="form-group col-md-6">
                             <strong>Date Of Birth : </strong>  
-                            <input class="date form-control"  type="text" id="datepicker" name="date">   
+                            <input class="date form-control"  type="date" id="date" name="date" required="">   
                          </div>
                         </div>
                         <div class="row">
@@ -53,14 +63,14 @@
                           <div class="col-md-0"></div>
                           <div class="form-group col-md-6">
                             <label for="Fathers Name">Fathers Name:</label>
-                            <input type="text" class="form-control" name="fathers_name">
+                            <input type="text" class="form-control" name="fathers_name" required="">
                           </div>
                         </div>
                         <div class="row">
                           <div class="col-md-0"></div>
                           <div class="form-group col-md-6">
                             <label for="Mothers Name">Mothers Name:</label>
-                            <input type="text" class="form-control" name="mothers_name">
+                            <input type="text" class="form-control" name="mothers_name" required="">
                           </div>
                         </div>
                         <div class="row">
@@ -107,7 +117,7 @@
                           <div class="col-md-0"></div>
                             <div class="form-group col-md-6">
                               <label for="Clan">Clan:</label>
-                              <input type="text" class="form-control" name="clan">
+                              <input type="text" class="form-control" name="clan" required="">
                             </div>
                           </div>
                         <div class="row">
@@ -198,14 +208,14 @@
                           <div class="col-md-0"></div>
                             <div class="form-group col-md-6">
                               <label for="Number">Home Address:</label>
-                              <input type="text" class="form-control" name="home_address">
+                              <input type="text" class="form-control" name="home_address" required="">
                             </div>
                           </div>
                         <div class="row">
                           <div class="col-md-0"></div>
                             <div class="form-group col-md-6">
                               <label for="Number">Occupation:</label>
-                              <input type="text" class="form-control" name="occupation">
+                              <input type="text" class="form-control" name="occupation" required="">
                             </div>
                           </div><br>
                         <div class="row">

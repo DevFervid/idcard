@@ -55,16 +55,19 @@
                             <a href="{{ url('dashboard/reports') }}"><i class="fa fa-bar-chart fa-fw"></i> Reports</a>
                         </li>
                         @endif
-                        @endif
-                        <li>
-                            <a href="{{ url('dashboard/new') }}"><i class="fa fa-credit-card fa-fw"></i>New Identity Card</a>
-                        </li>
+                        {{-- @if(Auth::id()) --}}
                         <li>
                             <a href="{{ url('dashboard/confirm1') }}"><i class="fa fa-copy fa-fw"></i> Replace</a>
                         </li>
                         <li>
                             <a href="{{ url('dashboard/confirm') }}"><i class="fa fa-edit fa-fw"></i>Edit Particulars</a>
                         </li>
+{{--                         @else
+ --}}                        <li>
+                            <a href="{{ url('dashboard/new') }}"><i class="fa fa-credit-card fa-fw"></i>New Identity Card</a>
+                        </li>
+                        {{-- @endif --}}
+                        @endif
                     </ul>
                 </div>
                 <!-- /.sidebar-collapse -->

@@ -130,10 +130,10 @@
                                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
                                     <option selected>Choose...</option>
                                     <option value="1">Migwani</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
-                                    <option value="4">Three</option>
-                                    <option value="5">Three</option>
+                                    <option value="2">Kogalo</option>
+                                    <option value="3">Bondo</option>
+                                    <option value="4">kabarnet</option>
+                                    <option value="5">Kisumu central</option>
                                   </select>
                                 </div>
                             </div><br>
@@ -143,10 +143,10 @@
                                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
                                         <option selected>Choose...</option>
                                         <option value="1">Itoloni</option>
-                                        <option value="2">Two</option>
-                                        <option value="3">Three</option>
-                                        <option value="4">Three</option>
-                                        <option value="5">Three</option>
+                                        <option value="2">Nyando</option>
+                                        <option value="3">Nyakach</option>
+                                        <option value="4">Makueni</option>
+                                        <option value="5">Moyale</option>
                                       </select>
                                 </div>
                                 <div class="col">
@@ -154,10 +154,10 @@
                                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
                                     <option selected>Choose...</option>
                                     <option value="1">Kamutisya</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
-                                    <option value="3">Three</option>
-                                    <option value="3">Three</option>
+                                    <option value="2">sotik</option>
+                                    <option value="3">siakago</option>
+                                    <option value="3">Juja</option>
+                                    <option value="3">Thika Town</option>
                                   </select>
                                 </div>
                                 <div class="col">
