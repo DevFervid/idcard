@@ -54,7 +54,6 @@
             <!-- /.panel -->
         </div>
     </div>
-    <!-- /.row -->
     <hr>
     <div class="row">
         <div class="col-lg-12">
@@ -153,196 +152,124 @@
 
         </div>                                
     </div> --}}
+
     <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-3 toppad" >
-
-    @foreach($applicants as $applicant)
-    
-        <div class="panel panel-info">
-            <div class="panel-heading">
-              <h3 class="panel-title">{{$applicant->fname}}</h3>
-            </div>
-            <div class="panel-body">
-              <div class="row">
-                <div class="col-md-3 col-lg-3 " align="center"> <img alt="User Pic" src="/storage/images/{{$applicant->image}}" class="img-circle img-responsive"> </div>
-                <div class=" col-md-9 col-lg-9 "> 
-                  <table class="table table-user-information">
-                    <tbody>
-                      <tr>
-                        <td>ID Number:</td>
-                        <td>{{$applicant->number}}</td>    
-                      </tr>
-                      <tr>
-                        <td>First Name:</td>
-                        <td>{{$applicant->fname}}</td>
-                      </tr>
-                      <tr>
-                        <td>Middle Name:</td>
-                        <td>{{$applicant->mname}}</td>
-                      </tr>
-                      <tr>
-                        <td>Surname Name:</td>
-                        <td>{{$applicant->lname}}</td>
-                      </tr>
-                      <tr>
-                        <td>Date Applied:</td>
-                        <td>{{$applicant->created_at}}</td>
-                      </tr>
-                      <tr>
-                        <td>Date of Birth</td>
-                        <td>{{$applicant->date}}</td>
-                      </tr>
-                   
-                         <tr>
-                             <tr>
-                        <td>Gender</td>
-                        <td>{{$applicant->gender}}</td>
-                      </tr>
-                      <tr>
-                        <td>Fathers Name:</td>
-                        <td>{{$applicant->fathers_name}}</td>
-                      </tr>
-                      <tr>
-                        <td>Mothers Name:</td>
-                        <td>{{$applicant->mothers_name}}</td>
-                      </tr>
-                      <tr>
-                        <td>Marital Status:</td>
-                        <td>{{$applicant->marital}}</td>
-                      </tr>
-                      <tr>
-                        <td>Husband Name:</td>
-                        <td>{{$applicant->husband_name}}</td>
-                      </tr>
-                      <tr>
-                        <td>Husband ID Number:</td>
-                        <td>{{$applicant->husband_idno}}</td>
-                      </tr>
-                      <tr>
-                        <td>Tribe:</td>
-                        <td>{{$applicant->tribe}}</td>
-                      </tr>
-
-
-                      @endforeach
-          @foreach($applicants as $applicant)
-    @if(Auth::check())
-      @if(Auth::id() == $applicant->user->id)
-          <div class="panel panel-info">
-              <div class="panel-heading">
-                <h3 class="panel-title">{{$applicant->fname}}</h3>
-              </div>
-              <div class="panel-body">
-                <div class="row">
-                  <div class="col-md-3 col-lg-3 " align="center"> <img alt="User Pic" src="/storage/images/{{$applicant->image}}" class="img-circle img-responsive"> </div>
-                  <div class=" col-md-9 col-lg-9 "> 
-                    <table class="table table-user-information">
-                      <tbody>
-                      <tr>
-                          <td>ID Number:</td>
-                          <td>{{$applicant->number}}</td>
-                             
-                        </tr>
-                        <tr>
-                          <td>First Name:</td>
-                          <td>{{$applicant->fname}}</td>
-                        </tr>
-                        <tr>
-                          <td>Middle Name:</td>
-                          <td>{{$applicant->mname}}</td>
-                        </tr>
-                        <tr>
-                          <td>Surname Name:</td>
-                          <td>{{$applicant->lname}}</td>
-                        </tr>
-                        <tr>
-                          <td>Date Applied:</td>
-                          <td>{{$applicant->created_at}}</td>
-                        </tr>
-                        <tr>
-                          <td>Date of Birth</td>
-                          <td>{{$applicant->date}}</td>
-                        </tr>
-                     
-                           <tr>
-                               <tr>
-                          <td>Gender</td>
-                          <td>{{$applicant->gender}}</td>
-                        </tr>
-                        <tr>
-                          <td>Fathers Name:</td>
-                          <td>{{$applicant->fathers_name}}</td>
-                        </tr>
-                        <tr>
-                          <td>Mothers Name:</td>
-                          <td>{{$applicant->mothers_name}}</td>
-                        </tr>
-                        <tr>
-                          <td>Marital Status:</td>
-                          <td>{{$applicant->marital}}</td>
-                        </tr>
-                        <tr>
-                          <td>Husband Name:</td>
-                          <td>{{$applicant->husband_name}}</td>
-                        </tr>
-                        <tr>
-                          <td>Husband ID Number:</td>
-                          <td>{{$applicant->husband_idno}}</td>
-                        </tr>
-                        <tr>
-                          <td>Tribe:</td>
-                          <td>{{$applicant->tribe}}</td>
-                        </tr>
-                        <tr>
-                          <td>Clan:</td>
-                          <td>{{$applicant->clan}}</td>
-                        </tr>
-                          <tr>
-                          <td>District:</td>
-                          <td>{{$applicant->district}}</td>
-                        </tr>
-                        <tr>
-                          <td>Division:</td>
-                          <td>{{$applicant->division}}</td>
-                        </tr>
-                        <tr>
-                          <td>Constituency:</td>
-                          <td>{{$applicant->constituency}}</td>
-                        </tr>
-                        <tr>
-                          <td>Location:</td>
-                          <td>{{$applicant->location}}</td>
-                        </tr>
-                        <tr>
-                          <td>Sub Location:</td>
-                          <td>{{$applicant->sub_location}}</td>
-                        </tr>
-                        <tr>
-                          <td>Home Address:</td>
-                          <td>{{$applicant->home_address}}</td>
-                        </tr>
-                        <tr>
-                          <td>Village:</td>
-                          <td>{{$applicant->village}}</td>
-                        </tr>
-                        <tr>
-                          <td>Occupation:</td>
-                          <td>{{$applicant->village}}</td>
-                        </tr>
-
-                       
-                      </tbody>
-                    </table>
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-3 toppad" >
+        @foreach($applicants as $applicant)
+          @if(Auth::check())
+            @if(Auth::id() == $applicant->user->id)
+              <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">{{$applicant->fname}}</h3>
                   </div>
-                </div>
-              </div>           
-            </div>
-          </div>
-      @endif
-    @endif
-    @endforeach
+                  <div class="panel-body">
+                    <div class="row">
+                      <div class="col-md-3 col-lg-3 " align="center"> <img alt="User Pic" src="/storage/images/{{$applicant->image}}" class="img-circle img-responsive"> </div>
+                      <div class=" col-md-9 col-lg-9 "> 
+                        <table class="table table-user-information">
+                          <tbody>
+                          <tr>
+                              <td>ID Number:</td>
+                              <td>{{$applicant->number}}</td>
+                                 
+                            </tr>
+                            <tr>
+                              <td>First Name:</td>
+                              <td>{{$applicant->fname}}</td>
+                            </tr>
+                            <tr>
+                              <td>Middle Name:</td>
+                              <td>{{$applicant->mname}}</td>
+                            </tr>
+                            <tr>
+                              <td>Surname Name:</td>
+                              <td>{{$applicant->lname}}</td>
+                            </tr>
+                            <tr>
+                              <td>Date Applied:</td>
+                              <td>{{$applicant->created_at}}</td>
+                            </tr>
+                            <tr>
+                              <td>Date of Birth</td>
+                              <td>{{$applicant->date}}</td>
+                            </tr>
+                         
+                               <tr>
+                                   <tr>
+                              <td>Gender</td>
+                              <td>{{$applicant->gender}}</td>
+                            </tr>
+                            <tr>
+                              <td>Fathers Name:</td>
+                              <td>{{$applicant->fathers_name}}</td>
+                            </tr>
+                            <tr>
+                              <td>Mothers Name:</td>
+                              <td>{{$applicant->mothers_name}}</td>
+                            </tr>
+                            <tr>
+                              <td>Marital Status:</td>
+                              <td>{{$applicant->marital}}</td>
+                            </tr>
+                            <tr>
+                              <td>Husband Name:</td>
+                              <td>{{$applicant->husband_name}}</td>
+                            </tr>
+                            <tr>
+                              <td>Husband ID Number:</td>
+                              <td>{{$applicant->husband_idno}}</td>
+                            </tr>
+                            <tr>
+                              <td>Tribe:</td>
+                              <td>{{$applicant->tribe}}</td>
+                            </tr>
+                            <tr>
+                              <td>Clan:</td>
+                              <td>{{$applicant->clan}}</td>
+                            </tr>
+                              <tr>
+                              <td>District:</td>
+                              <td>{{$applicant->district}}</td>
+                            </tr>
+                            <tr>
+                              <td>Division:</td>
+                              <td>{{$applicant->division}}</td>
+                            </tr>
+                            <tr>
+                              <td>Constituency:</td>
+                              <td>{{$applicant->constituency}}</td>
+                            </tr>
+                            <tr>
+                              <td>Location:</td>
+                              <td>{{$applicant->location}}</td>
+                            </tr>
+                            <tr>
+                              <td>Sub Location:</td>
+                              <td>{{$applicant->sub_location}}</td>
+                            </tr>
+                            <tr>
+                              <td>Home Address:</td>
+                              <td>{{$applicant->home_address}}</td>
+                            </tr>
+                            <tr>
+                              <td>Village:</td>
+                              <td>{{$applicant->village}}</td>
+                            </tr>
+                            <tr>
+                              <td>Occupation:</td>
+                              <td>{{$applicant->village}}</td>
+                            </tr>                       
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>           
+              </div>
+            @endif
+          @endif
+        @endforeach
+      </div>
     </div>
-</div>
 <!-- /#page-wrapper -->
 
 @endsection

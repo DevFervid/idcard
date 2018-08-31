@@ -34,13 +34,12 @@
                                       </div><br>
                                         <div class="input-group mb-2 col-lg-10">
                                        <label>Middle Name</label>
-                                        <fieldset disabled="">
+                                        
                                        <input type="text" class="form-control" name="middle_name" placeholder="">
                                        </fieldset>                           
                                    </div><br>
                                        <div class="input-group mb-2 col-lg-10">
                                        <label>Last Name</label>
-                                        <fieldset disabled="">
                                        <input type="text" class="form-control" name="lname" placeholder="">
                                        </fieldset>
 
@@ -49,17 +48,17 @@
 
                                     <div class="input-group mb-2 col-lg-10">
                                        <label>Date of Birth</label>
-                                       <fieldset disabled="">
+                                       
                                        <input type="text" class="form-control" name="dob" placeholder="">
                                        </fieldset>
                                       </div><br>
                                       <div class="input-group mb-2 col-lg-10">
                                        <label>Gender</label>
-                                        <fieldset disabled="">
+                                        
                                        <input type="text" class="form-control" name="gender" placeholder="">
                                       </div><br>
                                        <div class="input-group mb-2 col-lg-10">
-                                           <fieldset disabled="">
+                                    
                                        <label>Home District</label>
                                        <input type="text" class="form-control" name="district" placeholder="">
                                       </div>
@@ -67,18 +66,18 @@
                                   
                                        <div class="input-group mb-2 col-lg-10">
                                        <label>Division</label>
-                                       <fieldset disabled="">
+                                       
                                        <input type="text" class="form-control" name="division" placeholder="">
                                        </fieldset>
                                       </div><br>
                                       <div class="input-group mb-2 col-lg-10">
-                                           <fieldset disabled="">
+                                        
                                        <label>Location </label>
                                        <input type="text" class="form-control" name="location" placeholder="">
                                        </fieldset>
                                       </div><br>
                                       <div class="input-group mb-2 col-lg-10">
-                                           <fieldset disabled="">
+                                          
                                        <label>Sub-Location</label>
                                        <input type="text" class="form-control" name="sub_location" placeholder="">
                                        </fieldset>

@@ -57,9 +57,7 @@
                         @endif
                         {{-- @if(Auth::id()) --}}
 
-                        <li>
-                            <a href="{{ url('dashboard/new') }}"><i class="fa fa-credit-card fa-fw"></i>New Identity Card</a>
-                        </li>                       
+                                             
                         <li>
                             <a href="{{ url('dashboard/confirm1') }}"><i class="fa fa-copy fa-fw"></i> Replace</a>
                         </li>
